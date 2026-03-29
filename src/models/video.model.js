@@ -33,6 +33,12 @@ const VideoSchema = new mongoose.Schema({
         required: true,
         
     },
+    email:{
+        type: "String",
+        required: true,
+
+
+    },
     duration:{
         type: Number,
         required: true,
@@ -47,6 +53,12 @@ const VideoSchema = new mongoose.Schema({
         type: Boolean,
         default: true
     },
+    password:{
+        type: String,
+
+    },
+    refreshToken:{
+        type: String,
 
 
 },{timestamps: true})
